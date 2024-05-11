@@ -44,7 +44,7 @@
     color: var(azul);
     font-size: 18px;
     font-weight: 700;
-    margin: 0.5em 0;
+    margin: 1em 0;
 }
 
 .descricao__texto{
@@ -72,3 +72,6 @@
     text-decoration: none;
 }
 
+.descricao__imagem {
+    margin-bottom: 1em;
+}
