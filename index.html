@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500; 700&display-swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -45,13 +48,41 @@
           </li>
         </ul>
         <img src="img/Logo.svg" alt="Logo Alura" class="container__imagem" />
-        <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
+        <h1 class="container__titulo">
+          <b class="container__titulo--negrito">Alura</b>Books
+        </h1>
       </div>
 
       <ul class="opcoes">
-        <li class="opcoes__item">Categorias</li>
-        <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
-        <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
+        <input type="checkbox" id="opcoes-menu" class="opcoes__botao" />
+        <label for="opcoes-menu">
+          <li class="opcoes__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Programação</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Front-end</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Infraestrutura</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Business</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Design & UX</a>
+          </li>
+        </ul>
+        
+        <li class="opcoes__item">
+          <a href="#" class="opcoes__link">Favoritos</a>
+        </li>
+        <li class="opcoes__item">
+          <a href="#" class="opcoes__link">Minha estante</a>
+        </li>
       </ul>
 
       <div class="container">
@@ -138,36 +169,37 @@
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-        
       </div>
 
       <div class="card">
-       <!-- primeira linha -->
+        <!-- primeira linha -->
         <div class="card__descricao">
           <!-- primeira coluna -->
           <div class="descricao">
             <h3 class="descricao__titulo">
               Talvez você também se interesse por...
             </h3>
-            <h2 class="descricao__titulo__livro">
-              Angular 11 e Firebase
-            </h2>
+            <h2 class="descricao__titulo__livro">Angular 11 e Firebase</h2>
             <p class="descricao__texto">
               Construindo uma aplicação integrada com a plataforma do Google.
             </p>
           </div>
           <!-- segunda coluna -->
-          <img src="img/Angular.svg" alt="Livro do Angular" class="descricao__imagem">
+          <img
+            src="img/Angular.svg"
+            alt="Livro do Angular"
+            class="descricao__imagem"
+          />
         </div>
         <!-- segunda linha -->
         <div class="card__botoes">
           <!-- primeira coluna -->
           <ul class="botoes">
             <li class="botoes__item">
-              <img src="img/Favoritos.svg" alt="Icone de favoritos">
+              <img src="img/Favoritos.svg" alt="Icone de favoritos" />
             </li>
             <li class="botoes__item">
-              <img src="img/Compras.svg" alt="Icone de carrinho de compras">
+              <img src="img/Compras.svg" alt="Icone de carrinho de compras" />
             </li>
           </ul>
           <!-- segunda coluna -->
@@ -226,37 +258,41 @@
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-        
       </div>
 
       <div class="card">
-       <!-- primeira linha -->
+        <!-- primeira linha -->
         <div class="card__descricao">
           <!-- primeira coluna -->
           <div class="descricao">
-            <img src="/img/Estrelinhas.svg" alt="Estrelas para classificar" class="descricao__imagem">
-            <h3 class="descricao__titulo">
-              Autora do Mês
-            </h3>
-            <h2 class="descricao__titulo__livro">
-              Juliana Agarikov
-            </h2>
+            <img
+              src="/img/Estrelinhas.svg"
+              alt="Estrelas para classificar"
+              class="descricao__imagem"
+            />
+            <h3 class="descricao__titulo">Autora do Mês</h3>
+            <h2 class="descricao__titulo__livro">Juliana Agarikov</h2>
             <p class="descricao__texto">
-              Analista de sistemas e escritora, Juliana é especialista em Front-End. 
+              Analista de sistemas e escritora, Juliana é especialista em
+              Front-End.
             </p>
           </div>
           <!-- segunda coluna -->
-          <img src="img/Perfil-escritora.svg" alt="Mulher escritora" class="descricao__imagem">
+          <img
+            src="img/Perfil-escritora.svg"
+            alt="Mulher escritora"
+            class="descricao__imagem"
+          />
         </div>
         <!-- segunda linha -->
         <div class="card__botoes">
           <!-- primeira coluna -->
           <ul class="botoes">
             <li class="botoes__item">
-              <img src="img/Favoritos.svg" alt="Icone de favoritos">
+              <img src="img/Favoritos.svg" alt="Icone de favoritos" />
             </li>
             <li class="botoes__item">
-              <img src="img/Compras.svg" alt="Icone de carrinho de compras">
+              <img src="img/Compras.svg" alt="Icone de carrinho de compras" />
             </li>
           </ul>
           <!-- segunda coluna -->
@@ -266,9 +302,7 @@
     </section>
 
     <section class="topicos">
-      <h2 class="topicos__titulo">
-        TÓPICOS VISITADOS RECENTEMENTE
-      </h2>
+      <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
       <ul class="topicos__lista">
         <li class="topicos__item">
           <a href="#" class="topicos__link">Android</a>
@@ -298,16 +332,18 @@
     </section>
 
     <section class="contato">
-      <h2 class="contato__titulo">
-        Fique por dentro das novidades!
-      </h2>
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
       <p class="contato__texto">
         Atualizações de e-books, novos livros, promoções e outros.
       </p>
-      <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+      <input
+        type="email"
+        placeholder="Cadastre seu e-mail"
+        class="contato__email"
+      />
     </section>
 
-    <hr/>
+    <hr />
 
     <footer class="rodape">
       <h2 class="rodape__titulo">&copy; Desenvolvido por A.J</h2>
@@ -319,8 +355,8 @@
         spaceBetween: 10,
         slidesPerView: 3,
         pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
+          el: ".swiper-pagination",
+          type: "bullets",
         },
       });
     </script>
